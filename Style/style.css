@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.quicksand-font{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    margin: 10px 10px;
+}
+/* shared some thing */
+.btn-primary{
+    border-radius: 12px;
+
+    /* Orange */
+    background: rgb(254, 163, 1);
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 197px;
+    height: 50px;
+  }
+  .btn-primary:hover{
+    background: rgb(231, 184, 102);
+    color: white;
+  }
+
+
+/* header */
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part-1{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.nav-des{
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.part-2 > ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    
+}   
+.part-2 a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+.part-3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.part-3 img{
+    display: none;
+}
+
+
+
+
+/* media query */
+@media screen and (max-width:576px){
+    
+    .part-1 > .nav-des{
+       display: none;
+    }
+    .part-2{
+        display: none;
+
+    }
+    .part-3 button{
+        display: none;
+    }
+    .part-3 img{
+        display: block;
+        width: 22.5px;
+        height: 15px;
+    }
+    
+}
+
