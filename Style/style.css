@@ -216,7 +216,7 @@
 /* Stories Part */
 .stories{
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     
     background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
@@ -318,7 +318,120 @@
 .box-2 >.story-card-1{
     display: none;
 }
+.footer{
+    background: rgb(1, 172, 253);
+    color: white;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    padding: 100px;
+    
+}
+.footer-box-1{
+    /* display: flex; */
+    width: 33%;
+}
+.footer-box-2{
+    width: 33%;
+}
+.footer-box-3{
+    width: 34%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* gap: 3px; */
+}
+.title img{
+    width: 83px;
+    height: 82px;
+}
+.title-head{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 42.14px;
+    font-weight: 700;
+    line-height: 39.51px;
+    /* letter-spacing: 0%;
+    text-align: left; */
+    padding: 0;
+    margin-left: 0;
+}
+.title-desc{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.box-2-head{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.list{
+    list-style: none;
+    text-decoration: none;
+}
+.list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.third-head{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.third-and-last-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 50px;
+}
+.last-btn{
+    border-radius: 12px;
 
+    /* Black */
+    background: rgb(17, 17, 17);
+    width: 200px;
+    height: 52px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.last-btn:hover{
+    background: rgb(184, 77, 28);
+    width: 220px;
+    height: 60px;
+    color: wheat;
+}
 /* media query */
 @media screen and (max-width:576px){
     
@@ -399,6 +512,10 @@
     }
     .box-2{
         grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .footer{
+        flex-direction: column;
         gap: 10px;
     }
 }
